@@ -28,8 +28,8 @@
       </div>
       <!-- 6) Prepopulate the input field with your name via the "value" attribute -->
       <input type="text" v-model="name"/><br/>
-      <button v-on:click="addCounter">Add</button>
-      <button v-on:click="reduceCounter">Remove</button><br/>
+      <button v-on:click="addCounter(5)">Add</button>
+      <button v-on:click="reduceCounter(5)">Remove</button><br/>
       <p>Result : {{counter}}</p>
     </section>
   </body>

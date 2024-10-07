@@ -14,12 +14,12 @@ Vue.createApp({
     favouriteNum (){
       return Math.random();
     },
-    addCounter(){
-        this.counter = this.counter+1;
+    addCounter(num){
+        this.counter = this.counter+num;
     },
-    reduceCounter(){
+    reduceCounter(num){
         if(this.counter !== 0){
-            this.counter = this.counter-1;
+            this.counter = this.counter-num;
         }
     }
  }
