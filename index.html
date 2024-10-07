@@ -27,7 +27,10 @@
         <img v-bind:src="imgLink" />
       </div>
       <!-- 6) Prepopulate the input field with your name via the "value" attribute -->
-      <input type="text" v-model="name"/>
+      <input type="text" v-model="name"/><br/>
+      <button v-on:click="counter++">Add</button>
+      <button v-on:click="counter--">Remove</button><br/>
+      <p>Result : {{counter}}</p>
     </section>
   </body>
 </html>
