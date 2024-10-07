@@ -30,6 +30,7 @@
       <input type="text" v-on:keyup.enter="setName($event,'Vouage')"/><br/>
       <button v-on:click.right="addCounter(5)">Add</button>
       <button v-on:click.left="reduceCounter(5)">Remove</button><br/>
+      <p v-once>Starting counter : {{counter}}</p>
       <p>Result : {{counter}}</p>
       <br/>
       <form v-on:submit.prevent="submitForm">
