@@ -22,11 +22,14 @@ Vue.createApp({
             this.counter = this.counter-num;
         }
     },
-    setName(e,lastName){
-        this.name = e.target.value+" "+lastName;
+    setName(e){
+        this.name = e.target.value;
     },
     submitForm(){
         alert("form submission");
+    },
+    resetInput(){
+        this.name = ''
     }
  }
 }).mount("#assignment");

@@ -27,7 +27,8 @@
         <img v-bind:src="imgLink" />
       </div>
       <!-- 6) Prepopulate the input field with your name via the "value" attribute -->
-      <input type="text" v-on:keyup.enter="setName($event,'Vouage')"/><br/>
+      <input type="text" v-bind:value="name" v-on:keyup.enter="setName()"/><br/>
+      <button v-on:click="resetInput">Reset Input</button>
       <button v-on:click.right="addCounter(5)">Add</button>
       <button v-on:click.left="reduceCounter(5)">Remove</button><br/>
       <p v-once>Starting counter : {{counter}}</p>
