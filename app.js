@@ -22,8 +22,8 @@ Vue.createApp({
             this.counter = this.counter-num;
         }
     },
-    setName(e){
-        this.name = e.target.value;
+    setName(e,lastName){
+        this.name = e.target.value+" "+lastName;
     }
  }
 }).mount("#assignment");
