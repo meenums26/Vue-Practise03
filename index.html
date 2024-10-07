@@ -31,6 +31,11 @@
       <button v-on:click="addCounter(5)">Add</button>
       <button v-on:click="reduceCounter(5)">Remove</button><br/>
       <p>Result : {{counter}}</p>
+      <br/>
+      <form v-on:submit="submitForm">
+        <input type="text"/>
+        <button type="submit">Sign Up</button>
+      </form>
     </section>
   </body>
 </html>
