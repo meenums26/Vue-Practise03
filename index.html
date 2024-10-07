@@ -27,12 +27,12 @@
         <img v-bind:src="imgLink" />
       </div>
       <!-- 6) Prepopulate the input field with your name via the "value" attribute -->
-      <input type="text" v-on:input="setName($event,'Vouage')"/><br/>
-      <button v-on:click="addCounter(5)">Add</button>
-      <button v-on:click="reduceCounter(5)">Remove</button><br/>
+      <input type="text" v-on:keyup.enter="setName($event,'Vouage')"/><br/>
+      <button v-on:click.right="addCounter(5)">Add</button>
+      <button v-on:click.left="reduceCounter(5)">Remove</button><br/>
       <p>Result : {{counter}}</p>
       <br/>
-      <form v-on:submit="submitForm">
+      <form v-on:submit.prevent="submitForm">
         <input type="text"/>
         <button type="submit">Sign Up</button>
       </form>

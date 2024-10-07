@@ -25,8 +25,7 @@ Vue.createApp({
     setName(e,lastName){
         this.name = e.target.value+" "+lastName;
     },
-    submitForm(event){
-        event.preventDefault();
+    submitForm(){
         alert("form submission");
     }
  }
