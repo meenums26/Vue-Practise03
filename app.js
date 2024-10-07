@@ -13,6 +13,14 @@ Vue.createApp({
     },
     favouriteNum (){
       return Math.random();
+    },
+    addCounter(){
+        this.counter = this.counter+1;
+    },
+    reduceCounter(){
+        if(this.counter !== 0){
+            this.counter = this.counter-1;
+        }
     }
  }
 }).mount("#assignment");
